@@ -28,133 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.FullNameLabel = new System.Windows.Forms.Label();
+            this.YearOfBirthLabel = new System.Windows.Forms.Label();
+            this.CityLabel = new System.Windows.Forms.Label();
+            this.FacultyLabel = new System.Windows.Forms.Label();
+            this.RoleLabel = new System.Windows.Forms.Label();
+            this.RoleSpecificAttributeLabel = new System.Windows.Forms.Label();
+            this.FullNameTextBox = new System.Windows.Forms.TextBox();
+            this.YearOfBirthTextBox = new System.Windows.Forms.TextBox();
+            this.CityTextBox = new System.Windows.Forms.TextBox();
+            this.FacultyTextBox = new System.Windows.Forms.TextBox();
+            this.RoleTextBox = new System.Windows.Forms.TextBox();
+            this.RoleSpecificAttributeTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // FullNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Full Name:";
+            this.FullNameLabel.AutoSize = true;
+            this.FullNameLabel.Location = new System.Drawing.Point(30, 75);
+            this.FullNameLabel.Name = "FullNameLabel";
+            this.FullNameLabel.Size = new System.Drawing.Size(71, 16);
+            this.FullNameLabel.TabIndex = 0;
+            this.FullNameLabel.Text = "Full Name:";
             // 
-            // label2
+            // YearOfBirthLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Year of birth:";
+            this.YearOfBirthLabel.AutoSize = true;
+            this.YearOfBirthLabel.Location = new System.Drawing.Point(30, 120);
+            this.YearOfBirthLabel.Name = "YearOfBirthLabel";
+            this.YearOfBirthLabel.Size = new System.Drawing.Size(81, 16);
+            this.YearOfBirthLabel.TabIndex = 1;
+            this.YearOfBirthLabel.Text = "Year of birth:";
             // 
-            // label3
+            // CityLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "City:";
+            this.CityLabel.AutoSize = true;
+            this.CityLabel.Location = new System.Drawing.Point(30, 165);
+            this.CityLabel.Name = "CityLabel";
+            this.CityLabel.Size = new System.Drawing.Size(32, 16);
+            this.CityLabel.TabIndex = 2;
+            this.CityLabel.Text = "City:";
             // 
-            // label4
+            // FacultyLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 210);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Faculty:";
+            this.FacultyLabel.AutoSize = true;
+            this.FacultyLabel.Location = new System.Drawing.Point(30, 210);
+            this.FacultyLabel.Name = "FacultyLabel";
+            this.FacultyLabel.Size = new System.Drawing.Size(53, 16);
+            this.FacultyLabel.TabIndex = 3;
+            this.FacultyLabel.Text = "Faculty:";
             // 
-            // label5
+            // RoleLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 255);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Role:";
+            this.RoleLabel.AutoSize = true;
+            this.RoleLabel.Location = new System.Drawing.Point(30, 255);
+            this.RoleLabel.Name = "RoleLabel";
+            this.RoleLabel.Size = new System.Drawing.Size(39, 16);
+            this.RoleLabel.TabIndex = 4;
+            this.RoleLabel.Text = "Role:";
             // 
-            // label6
+            // RoleSpecificAttributeLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 300);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "[role specific attribute]:";
+            this.RoleSpecificAttributeLabel.AutoSize = true;
+            this.RoleSpecificAttributeLabel.Location = new System.Drawing.Point(30, 300);
+            this.RoleSpecificAttributeLabel.Name = "RoleSpecificAttributeLabel";
+            this.RoleSpecificAttributeLabel.Size = new System.Drawing.Size(140, 16);
+            this.RoleSpecificAttributeLabel.TabIndex = 5;
+            this.RoleSpecificAttributeLabel.Text = "[role specific attribute]:";
             // 
-            // textBox1
+            // FullNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 22);
-            this.textBox1.TabIndex = 6;
+            this.FullNameTextBox.Location = new System.Drawing.Point(190, 71);
+            this.FullNameTextBox.Name = "FullNameTextBox";
+            this.FullNameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.FullNameTextBox.TabIndex = 6;
             // 
-            // textBox2
+            // YearOfBirthTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(190, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 22);
-            this.textBox2.TabIndex = 7;
+            this.YearOfBirthTextBox.Location = new System.Drawing.Point(190, 116);
+            this.YearOfBirthTextBox.Name = "YearOfBirthTextBox";
+            this.YearOfBirthTextBox.Size = new System.Drawing.Size(200, 22);
+            this.YearOfBirthTextBox.TabIndex = 7;
             // 
-            // textBox3
+            // CityTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 22);
-            this.textBox3.TabIndex = 8;
+            this.CityTextBox.Location = new System.Drawing.Point(190, 161);
+            this.CityTextBox.Name = "CityTextBox";
+            this.CityTextBox.Size = new System.Drawing.Size(200, 22);
+            this.CityTextBox.TabIndex = 8;
             // 
-            // textBox4
+            // FacultyTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(190, 206);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 22);
-            this.textBox4.TabIndex = 9;
+            this.FacultyTextBox.Location = new System.Drawing.Point(190, 206);
+            this.FacultyTextBox.Name = "FacultyTextBox";
+            this.FacultyTextBox.Size = new System.Drawing.Size(200, 22);
+            this.FacultyTextBox.TabIndex = 9;
             // 
-            // textBox5
+            // RoleTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(190, 251);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 22);
-            this.textBox5.TabIndex = 10;
+            this.RoleTextBox.Location = new System.Drawing.Point(190, 251);
+            this.RoleTextBox.Name = "RoleTextBox";
+            this.RoleTextBox.Size = new System.Drawing.Size(200, 22);
+            this.RoleTextBox.TabIndex = 10;
             // 
-            // textBox6
+            // RoleSpecificAttributeTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(190, 296);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 22);
-            this.textBox6.TabIndex = 11;
+            this.RoleSpecificAttributeTextBox.Location = new System.Drawing.Point(190, 296);
+            this.RoleSpecificAttributeTextBox.Name = "RoleSpecificAttributeTextBox";
+            this.RoleSpecificAttributeTextBox.Size = new System.Drawing.Size(200, 22);
+            this.RoleSpecificAttributeTextBox.TabIndex = 11;
             // 
             // UserInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 371);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.RoleSpecificAttributeTextBox);
+            this.Controls.Add(this.RoleTextBox);
+            this.Controls.Add(this.FacultyTextBox);
+            this.Controls.Add(this.CityTextBox);
+            this.Controls.Add(this.YearOfBirthTextBox);
+            this.Controls.Add(this.FullNameTextBox);
+            this.Controls.Add(this.RoleSpecificAttributeLabel);
+            this.Controls.Add(this.RoleLabel);
+            this.Controls.Add(this.FacultyLabel);
+            this.Controls.Add(this.CityLabel);
+            this.Controls.Add(this.YearOfBirthLabel);
+            this.Controls.Add(this.FullNameLabel);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UserInfoForm";
@@ -167,18 +167,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label FullNameLabel;
+        private System.Windows.Forms.Label YearOfBirthLabel;
+        private System.Windows.Forms.Label CityLabel;
+        private System.Windows.Forms.Label FacultyLabel;
+        private System.Windows.Forms.Label RoleLabel;
+        private System.Windows.Forms.Label RoleSpecificAttributeLabel;
+        private System.Windows.Forms.TextBox FullNameTextBox;
+        private System.Windows.Forms.TextBox YearOfBirthTextBox;
+        private System.Windows.Forms.TextBox CityTextBox;
+        private System.Windows.Forms.TextBox FacultyTextBox;
+        private System.Windows.Forms.TextBox RoleTextBox;
+        private System.Windows.Forms.TextBox RoleSpecificAttributeTextBox;
     }
 }
 
