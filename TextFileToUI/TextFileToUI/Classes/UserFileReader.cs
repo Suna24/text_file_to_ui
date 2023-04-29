@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.IO;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+
 
 namespace TextFileToUI
 {
@@ -22,8 +27,19 @@ namespace TextFileToUI
 
         public string ReadFile()
         {
-            /* Not implemented yet */
-            return "";
+
+            var dict = new Dictionary<string, string>();
+
+            foreach (var line in File.ReadAllLines(FilePath))
+            {
+                var keyValue = line.Split('=');
+                if (keyValue[0] != "File accessed times")
+                {
+                    dict.Add(keyValue[0], keyValue[1]);
+                }
+            }
+                
+            return JsonConvert.SerializeObject(dict);
         }
     }
 }

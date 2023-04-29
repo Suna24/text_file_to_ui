@@ -14,5 +14,10 @@ namespace TextFileToUI.Classes
         public string Faculty { get; set; }
         public string FavoriteCourse { get; set; }
         public Role Role { get; set; }
+
+        public User()
+        {
+
+        }
     }
 }
