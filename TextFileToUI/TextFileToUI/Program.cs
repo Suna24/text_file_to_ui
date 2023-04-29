@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using TextFileToUI.Classes;
 
 namespace TextFileToUI
 {
@@ -19,7 +15,6 @@ namespace TextFileToUI
             Application.SetCompatibleTextRenderingDefault(false);
             UserInfoForm userInfoForm = new UserInfoForm();
             Application.Run(userInfoForm);
-
         }
     }
 }
