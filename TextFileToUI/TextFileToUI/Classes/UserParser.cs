@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
+using System;
+using System.Linq;
 
 namespace TextFileToUI.Classes
 {
@@ -23,14 +25,10 @@ namespace TextFileToUI.Classes
             user.Faculty = (string)jsonObject["Faculty"];
             user.FavoriteCourse = (string)jsonObject["Favorite course"];
 
-            /* Role attribute for the user (optional parameter) */
-            if (jsonObject.ContainsKey("Specific attribute"))
-            {
-                user.Role = new Role((string)jsonObject["Role"], (string)jsonObject["Specific attribute"]);
-            } else
-            {
-                user.Role = new Role((string)jsonObject["Role"]);
-            }
+            /* Specific attribute for the role */
+            JProperty lastJson = jsonObject.Properties().Last();
+            (string, string) tuple = (lastJson.Name, (string)lastJson.Value);
+            user.Role = new Role((string)jsonObject["Role"], tuple);
             
             return user;
         }

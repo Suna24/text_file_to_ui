@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9DCF6CAC-DBA7-4A59-BC2B-0B6283891D4D}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>TextFileToUI</RootNamespace>
     <AssemblyName>TextFileToUI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
