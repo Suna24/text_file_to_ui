@@ -12,16 +12,10 @@ namespace TextFileToUI.Classes
         public string Name { get; set; }
         public string SpecificAttribute { get; set; }
 
-        public Role(string name, string specificAttribute)
+        public Role(string name, string specificAttribute="")
         {
             Name = name;
             SpecificAttribute = specificAttribute;
-        }
-
-        public Role(string name)
-        {
-            Name = name;
-            SpecificAttribute = "";
         }
     }
 }

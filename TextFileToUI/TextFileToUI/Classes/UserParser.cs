@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace TextFileToUI.Classes
 {
@@ -17,8 +19,26 @@ namespace TextFileToUI.Classes
 
         public User ParseData()
         {
-            /* Not implemented yet */
-            return null;
+            User user = new User();
+            JObject jsonObject = JObject.Parse(UserStringData);
+
+            /* Classic attributes for the user */
+            user.FullName = (string)jsonObject["Name"] + " " + (string)jsonObject["Surname"];
+            user.YearOfBirth = (int)jsonObject["Year of birth"];
+            user.CityOfOrigin = (string)jsonObject["City of origin"];
+            user.Faculty = (string)jsonObject["Faculty"];
+            user.FavoriteCourse = (string)jsonObject["Favorite course"];
+
+            /* Role attribute for the user (optional parameter) */
+            if (jsonObject.ContainsKey("Specific attribute"))
+            {
+                user.Role = new Role((string)jsonObject["Role"], (string)jsonObject["Specific attribute"]);
+            } else
+            {
+                user.Role = new Role((string)jsonObject["Role"]);
+            }
+            
+            return user;
         }
     }
 }
