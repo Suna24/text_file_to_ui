@@ -40,6 +40,7 @@
             this.FacultyTextBox = new System.Windows.Forms.TextBox();
             this.RoleTextBox = new System.Windows.Forms.TextBox();
             this.RoleSpecificAttributeTextBox = new System.Windows.Forms.TextBox();
+            this.chooseFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FullNameLabel
@@ -138,11 +139,22 @@
             this.RoleSpecificAttributeTextBox.Size = new System.Drawing.Size(200, 22);
             this.RoleSpecificAttributeTextBox.TabIndex = 11;
             // 
+            // chooseFile
+            // 
+            this.chooseFile.Location = new System.Drawing.Point(33, 13);
+            this.chooseFile.Name = "chooseFile";
+            this.chooseFile.Size = new System.Drawing.Size(137, 31);
+            this.chooseFile.TabIndex = 12;
+            this.chooseFile.Text = "Choose file...";
+            this.chooseFile.UseVisualStyleBackColor = true;
+            this.chooseFile.Click += new System.EventHandler(this.chooseFile_Click);
+            // 
             // UserInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 371);
+            this.Controls.Add(this.chooseFile);
             this.Controls.Add(this.RoleSpecificAttributeTextBox);
             this.Controls.Add(this.RoleTextBox);
             this.Controls.Add(this.FacultyTextBox);
@@ -179,6 +191,7 @@
         private System.Windows.Forms.TextBox FacultyTextBox;
         private System.Windows.Forms.TextBox RoleTextBox;
         private System.Windows.Forms.TextBox RoleSpecificAttributeTextBox;
+        private System.Windows.Forms.Button chooseFile;
     }
 }
 
