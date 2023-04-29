@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Classes\Role.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\UserDisplayer.cs" />
     <Compile Include="Classes\UserFileReader.cs" />
     <Compile Include="Classes\UserParser.cs" />
     <Compile Include="Forms\UserInfoForm.cs">
